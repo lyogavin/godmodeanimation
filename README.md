@@ -1,4 +1,9 @@
 # God Mode Animation: 2D Game Animation Generation Model
+<style>
+td, th {
+   border: none!important;
+}
+</style>
 | ![godmodeanimation_logo](https://github.com/lyogavin/godmodeanimation/blob/main/assets/godmodeanimation_logo.png?raw=true) | ![godmodeanimation_logo1](https://github.com/lyogavin/godmodeanimation/blob/main/assets/godmodeanimation_logo1.png?raw=true) |
 |:---:|:---:|
 
