@@ -47,7 +47,7 @@ I tried to train text to video and image to video models to generate 2D game ani
 You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 <p align="middle">
     <p align="middle">a dino jumping cacti in the desert</p>
-    <p align="middle"><img src="https://f005.backblazeb2.com/file/godmodeaigendanims/dino_game.gif" width="300" /></p>
+    <p align="middle"><img src="/assets/dino_game.gif" width="300" /></p>
 </p>
 <p align="middle">
     <p align="middle">Donald Trump jumping trash can in new york city</p>
