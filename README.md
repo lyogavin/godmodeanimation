@@ -1,6 +1,6 @@
 # God Mode Animation: 2D Game Animation Generation Model
 
-<p float="middle">
+<p align="middle">
   <img src="/assets/godmodeanimation_logo.png?raw=true" width="300" />
   <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
 </p>
