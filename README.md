@@ -51,7 +51,7 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 </p>
 <p align="middle">
     <p align="middle">Donald Trump jumping trash can in new york city</p>
-    <p align="middle"><img src="https://f005.backblazeb2.com/file/godmodeaigendanims/trump_game.gif" width="300" /></p>
+    <p align="middle"><img src="/assets/trump_game.gif" width="300" /></p>
 </p>
 <p align="middle">
     <p align="middle">Harry Potter jumping tree in Hogwarts castle</p>
