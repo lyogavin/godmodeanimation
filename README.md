@@ -59,7 +59,7 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 </p>
 <p align="middle">
     <p align="middle">Tylor Swift jumping microphone in hotel room</p>
-    <p align="middle"><img src="https://f005.backblazeb2.com/file/godmodeaigendanims/taylorswift_game.gif?raw=true" width="300" /></p>
+    <p align="middle"><img src="/assets/taylorswift_game.gif" width="300" /></p>
 </p>
 
 
