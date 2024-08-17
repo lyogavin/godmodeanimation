@@ -1,8 +1,8 @@
 # God Mode Animation: 2D Game Animation Generation Model
 
 <p float="left">
-  <img src="https://github.com/lyogavin/godmodeanimation/blob/main/assets/godmodeanimation_logo.png?raw=true" width="300" />
-  <img src="https://github.com/lyogavin/godmodeanimation/blob/main/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
+  <img src="/assets/godmodeanimation_logo.png?raw=true" width="300" />
+  <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
 </p>
 
 I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://gavinliblog.com).
