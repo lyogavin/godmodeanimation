@@ -55,7 +55,7 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 </p>
 <p align="middle">
     <p align="middle">Harry Potter jumping tree in Hogwarts castle</p>
-    <p align="middle"><img src="https://f005.backblazeb2.com/file/godmodeaigendanims/harrypotter_game.gif?raw=true" width="300" /></p>
+    <p align="middle"><img src="/assets/harrypotter_game.gif" width="300" /></p>
 </p>
 <p align="middle">
     <p align="middle">Tylor Swift jumping microphone in hotel room</p>
