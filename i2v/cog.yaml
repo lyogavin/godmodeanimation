@@ -22,4 +22,18 @@ build:
     - "kornia==0.7.0"
     - "open-clip-torch==2.12.0"
     - "xformers==0.0.21"
+
+# commands run after the environment is setup
+run:
+#   - "echo env is ready!"
+#   - "echo another command if needed"
+  - "git clone https://github.com/lyogavin/godmodeanimation"
+  - "cd godmodeanimation"
+  - "mkdir checkpoints"
+  - "cd checkpoints"
+  - "wget https://huggingface.co/lyogavin/godmodeanimation_vc2_runjump_ep34/resolve/main/model.ckpt -O runjump.ckpt"
+  - "wget https://huggingface.co/lyogavin/godmodeanimation_vc2_spinkick_ep34/resolve/main/model.ckpt -O spinkick.ckpt"
+  - "wget https://huggingface.co/lyogavin/godmodeanimation_vc2_sword_wield_ep38/resolve/main/model.ckpt -O swordwield.ckpt"
+
+
 predict: "predict.py:Predictor"

@@ -27,38 +27,39 @@ class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
 
-        ckpt_path_base = "checkpoints/base_1024_v1/model.ckpt"
-        config_base = "configs/inference_t2v_1024_v1.0.yaml"
-        ckpt_path_i2v = "checkpoints/i2v_512_v1/model.ckpt"
-        config_i2v = "configs/inference_i2v_512_v1.0.yaml"
+
+        ckpt_path_runjump = "checkpoints/runjump.ckpt"
+        ckpt_path_spinkick = "checkpoints/spinkick.ckpt"
+        ckpt_path_swordwield = "checkpoints/swordwield.ckpt"
+        config = "configs/inference_t2v_512_v2.0.yaml"
 
         config_base = OmegaConf.load(config_base)
         model_config_base = config_base.pop("model", OmegaConf.create())
-        self.model_base = instantiate_from_config(model_config_base)
-        self.model_base = self.model_base.cuda()
-        self.model_base = load_model_checkpoint(self.model_base, ckpt_path_base)
-        self.model_base.eval()
+        self.model_runjump = instantiate_from_config(model_config_base)
+        self.model_runjump = self.model_runjump.cuda()
+        self.model_runjump = load_model_checkpoint(self.model_runjump, ckpt_path_runjump)
+        self.model_runjump.eval()
 
-        config_i2v = OmegaConf.load(config_i2v)
-        model_config_i2v = config_i2v.pop("model", OmegaConf.create())
-        self.model_i2v = instantiate_from_config(model_config_i2v)
-        self.model_i2v = self.model_i2v.cuda()
-        self.model_i2v = load_model_checkpoint(self.model_i2v, ckpt_path_i2v)
-        self.model_i2v.eval()
+        self.model_spinkick = instantiate_from_config(model_config_base)
+        self.model_spinkick = self.model_spinkick.cuda()
+        self.model_spinkick = load_model_checkpoint(self.model_spinkick, ckpt_path_spinkick)
+        self.model_spinkick.eval()
+
+        self.model_swordwield = instantiate_from_config(model_config_base)
+        self.model_swordwield = self.model_swordwield.cuda()
+        self.model_swordwield = load_model_checkpoint(self.model_swordwield, ckpt_path_swordwield)
+        self.model_swordwield.eval()
 
     def predict(
         self,
         task: str = Input(
             description="Choose the task.",
-            choices=["text2video", "image2video"],
-            default="text2video",
+            choices=["runjump", "spinkick", "swordwield"],
+            default="runjump",
         ),
         prompt: str = Input(
             description="Prompt for video generation.",
             default="A tiger walks in the forest, photorealistic, 4k, high definition.",
-        ),
-        image: Path = Input(
-            description="Input image for image2video task.", default=None
         ),
         ddim_steps: int = Input(description="Number of denoising steps.", default=50),
         unconditional_guidance_scale: float = Input(
@@ -72,12 +73,9 @@ class Predictor(BasePredictor):
         ),
     ) -> Path:
 
-        width = 1024 if task == "text2video" else 512
-        height = 576 if task == "text2video" else 320
-        model = self.model_base if task == "text2video" else self.model_i2v
-
-        if task == "image2video":
-            assert image is not None, "Please provide image for image2video generation."
+        width = 512
+        height =  320
+        model = self.model_runjump if task == "runjump" else self.model_spinkick if task == "spinkick" else self.model_swordwield
 
         if seed is None:
             seed = int.from_bytes(os.urandom(2), "big")
@@ -85,7 +83,7 @@ class Predictor(BasePredictor):
         seed_everything(seed)
 
         args = argparse.Namespace(
-            mode="base" if task == "text2video" else "i2v",
+            mode="base",
             savefps=save_fps,
             n_samples=1,
             ddim_steps=ddim_steps,
@@ -94,7 +92,7 @@ class Predictor(BasePredictor):
             height=height,
             width=width,
             frames=-1,
-            fps=28 if task == "text2video" else 8,
+            fps=16,
             unconditional_guidance_scale=unconditional_guidance_scale,
             unconditional_guidance_scale_temporal=None,
         )
@@ -112,12 +110,6 @@ class Predictor(BasePredictor):
 
         if args.mode == "base":
             cond = {"c_crossattn": [text_emb], "fps": fps}
-        elif args.mode == "i2v":
-            cond_images = load_image_batch([str(image)], (args.height, args.width))
-            cond_images = cond_images.to(model.device)
-            img_emb = model.get_image_embeds(cond_images)
-            imtext_cond = torch.cat([text_emb, img_emb], dim=1)
-            cond = {"c_crossattn": [imtext_cond], "fps": fps}
         else:
             raise NotImplementedError
 
