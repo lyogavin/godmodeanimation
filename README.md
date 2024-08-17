@@ -85,10 +85,10 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 
 | Motion         | Model Type              | Data         |
 | ------------ | ------------- | ------------ |
-| Sword Wield | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_vc2_sword_wield_ep36)    |
+| Sword Wield | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_sword_wield)    |
 | Spin Kick | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_spinkick)    |
-| Run Jump | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_vc2_runjump_ep30)    |
-| Run | DC I2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_dc_run_ep19)    |
+| Run Jump | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_runjump)    |
+| Run | DC I2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_i2v_run)    |
 
 
 ##  How to Train I2V Model
