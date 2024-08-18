@@ -58,7 +58,7 @@ class Predictor(BasePredictor):
             default="runjump",
         ),
         prompt: str = Input(
-            description="Prompt for video generation.",
+            description="Prompt for animtion, use this format: \"Game character [spin kick or run or jump or sword slashing] animation of...\"",
             default="Game character running animation of an ancient warrior with bronze armor, spear, and shield, side view, classic mythology theme, high resolution, vibrant colors, detailed animation, side view, solid color background",
         ),
         ddim_steps: int = Input(description="Number of denoising steps.", default=50),
