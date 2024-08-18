@@ -31,25 +31,21 @@ class Predictor(BasePredictor):
         ckpt_path_runjump = "/runjump.ckpt"
         ckpt_path_spinkick = "/spinkick.ckpt"
         ckpt_path_swordwield = "/swordwield.ckpt"
-        config = "configs/inference_t2v_512_v2.0.yaml"
+        config_path = "configs/inference_t2v_512_v2.0.yaml"
 
-        config_runjump = OmegaConf.load(ckpt_path_runjump)
-        model_config_runjump = config_runjump.pop("model", OmegaConf.create())
-        self.model_runjump = instantiate_from_config(model_config_runjump)
+        config_base = OmegaConf.load(config_path)
+        model_config_base = config_base.pop("model", OmegaConf.create())
+        self.model_runjump = instantiate_from_config(model_config_base)
         self.model_runjump = self.model_runjump.cuda()
         self.model_runjump = load_model_checkpoint(self.model_runjump, ckpt_path_runjump)
         self.model_runjump.eval()
 
-        config_spinkick = OmegaConf.load(ckpt_path_spinkick)
-        model_config_spinkick = config_spinkick.pop("model", OmegaConf.create())
-        self.model_spinkick = instantiate_from_config(model_config_spinkick)
+        self.model_spinkick = instantiate_from_config(model_config_base)
         self.model_spinkick = self.model_spinkick.cuda()
         self.model_spinkick = load_model_checkpoint(self.model_spinkick, ckpt_path_spinkick)
         self.model_spinkick.eval()
 
-        config_swordwield = OmegaConf.load(ckpt_path_swordwield)
-        model_config_swordwield = config_swordwield.pop("model", OmegaConf.create())
-        self.model_swordwield = instantiate_from_config(model_config_swordwield)
+        self.model_swordwield = instantiate_from_config(model_config_base)
         self.model_swordwield = self.model_swordwield.cuda()
         self.model_swordwield = load_model_checkpoint(self.model_swordwield, ckpt_path_swordwield)
         self.model_swordwield.eval()
