@@ -59,7 +59,7 @@ class Predictor(BasePredictor):
         ),
         prompt: str = Input(
             description="Prompt for video generation.",
-            default="A tiger walks in the forest, photorealistic, 4k, high definition.",
+            default="Game character running animation of an ancient warrior with bronze armor, spear, and shield, side view, classic mythology theme, high resolution, vibrant colors, detailed animation, side view, solid color background",
         ),
         ddim_steps: int = Input(description="Number of denoising steps.", default=50),
         unconditional_guidance_scale: float = Input(
