@@ -53,13 +53,13 @@ class Predictor(BasePredictor):
     def predict(
         self,
         task: str = Input(
-            description="Choose the task.",
+            description="Choose the task runjump for run and jump animation, spinkick for spin kick animation, swordwield for sword slashing animation.",
             choices=["runjump", "spinkick", "swordwield"],
             default="runjump",
         ),
         prompt: str = Input(
             description="Prompt for animtion, use this format: \"Game character [spin kick or run or jump or sword slashing] animation of [character description], side view, solid color background\"",
-            default="Game character running animation of an ancient warrior with bronze armor, spear, and shield, side view, classic mythology theme, high resolution, vibrant colors, detailed animation, side view, solid color background",
+            default="Game character running animation of ancient Chinese swordsman, serene and wise, with flowing white robes and long beard, holding a slender, curved jian sword, side view, solid color background",
         ),
         ddim_steps: int = Input(description="Number of denoising steps.", default=50),
         unconditional_guidance_scale: float = Input(
