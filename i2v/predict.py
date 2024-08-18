@@ -28,9 +28,9 @@ class Predictor(BasePredictor):
         """Load the model into memory to make running multiple predictions efficient"""
 
 
-        ckpt_path_runjump = "checkpoints/runjump.ckpt"
-        ckpt_path_spinkick = "checkpoints/spinkick.ckpt"
-        ckpt_path_swordwield = "checkpoints/swordwield.ckpt"
+        ckpt_path_runjump = "/runjump.ckpt"
+        ckpt_path_spinkick = "/spinkick.ckpt"
+        ckpt_path_swordwield = "/swordwield.ckpt"
         config = "configs/inference_t2v_512_v2.0.yaml"
 
         config_runjump = OmegaConf.load(ckpt_path_runjump)
