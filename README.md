@@ -129,7 +129,7 @@ DC I2V model is based on [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafte
 
 ## Replicate Public Model
 
-We created Replicate public models for Sword Wield, Spin Kick, Run Jump and Run. You can find the details in [Replicate](https://replicate.com/lyogavin/godmodeanimation).
+We created Replicate public models for Sword Wield, Spin Kick, Run Jump and Run. You can try it from Replicat platform, find the details in [Replicate](https://replicate.com/lyogavin/godmodeanimation).
 
 
 ## Citing God Mode Animation
