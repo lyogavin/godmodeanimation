@@ -5,7 +5,7 @@
   <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
 </p>
 
-I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://gavinliblog.com).
+I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://www.gavinliblog.com/posts/godmodeanimation).
 
 
 [![Website](https://img.shields.io/website?up_message=blog&url=https%3A%2F%2Fmedium.com%2F%40lyo.gavin&logo=medium&color=black)](https://medium.com/@lyo.gavin)
