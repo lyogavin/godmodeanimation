@@ -25,8 +25,8 @@ build:
 
   # commands run after the environment is setup
   run:
-    - "git clone https://github.com/lyogavin/godmodeanimation.git"
-    - "cd godmodeanimation"
+    #- "git clone https://github.com/lyogavin/godmodeanimation.git"
+    #- "cd godmodeanimation"
     - "mkdir checkpoints"
     - "cd checkpoints"
     - "wget https://huggingface.co/lyogavin/godmodeanimation_vc2_runjump_ep34/resolve/main/model.ckpt -O runjump.ckpt"
