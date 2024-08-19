@@ -28,27 +28,15 @@ class Predictor(BasePredictor):
         """Load the model into memory to make running multiple predictions efficient"""
 
 
-        ckpt_path_runjump = "/runjump.ckpt"
-        ckpt_path_spinkick = "/spinkick.ckpt"
-        ckpt_path_swordwield = "/swordwield.ckpt"
-        config_path = "configs/inference_t2v_512_v2.0.yaml"
+        self.ckpt_path_runjump = "/runjump.ckpt"
+        self.ckpt_path_spinkick = "/spinkick.ckpt"
+        self.ckpt_path_swordwield = "/swordwield.ckpt"
+        self.config_path = "configs/inference_t2v_512_v2.0.yaml"
 
-        config_base = OmegaConf.load(config_path)
-        model_config_base = config_base.pop("model", OmegaConf.create())
-        self.model_runjump = instantiate_from_config(model_config_base)
-        self.model_runjump = self.model_runjump.cuda()
-        self.model_runjump = load_model_checkpoint(self.model_runjump, ckpt_path_runjump)
-        self.model_runjump.eval()
-
-        self.model_spinkick = instantiate_from_config(model_config_base)
-        self.model_spinkick = self.model_spinkick.cuda()
-        self.model_spinkick = load_model_checkpoint(self.model_spinkick, ckpt_path_spinkick)
-        self.model_spinkick.eval()
-
-        self.model_swordwield = instantiate_from_config(model_config_base)
-        self.model_swordwield = self.model_swordwield.cuda()
-        self.model_swordwield = load_model_checkpoint(self.model_swordwield, ckpt_path_swordwield)
-        self.model_swordwield.eval()
+        self.config_base = OmegaConf.load(self.config_path)
+        self.model_config_base = self.config_base.pop("model", OmegaConf.create())
+        self.model = None
+        self.cached_task = None
 
     def predict(
         self,
@@ -75,7 +63,32 @@ class Predictor(BasePredictor):
 
         width = 512
         height =  320
-        model = self.model_runjump if task == "runjump" else self.model_spinkick if task == "spinkick" else self.model_swordwield
+        # 
+        if self.model is not None and self.cached_task != task:
+            del self.model
+            torch.cuda.empty_cache()
+            self.model = None
+
+        if task == "runjump":
+            self.model = instantiate_from_config(self.model_config_base)
+            self.model = self.model.cuda()
+            self.model = load_model_checkpoint(self.model, self.ckpt_path_runjump)
+            self.model.eval()
+            self.cached_task = "runjump"
+        if task == "spinkick":
+            self.model = instantiate_from_config(self.model_config_base)
+            self.model = self.model.cuda()
+            self.model = load_model_checkpoint(self.model, self.ckpt_path_spinkick)
+            self.model.eval()
+            self.cached_task = "spinkick"
+        if task == "swordwield":
+            self.model = instantiate_from_config(self.model_config_base)
+            self.model = self.model.cuda()
+            self.model = load_model_checkpoint(self.model, self.ckpt_path_swordwield)
+            self.model.eval()
+            self.cached_task = "swordwield"
+
+        model = self.model
 
         if seed is None:
             seed = int.from_bytes(os.urandom(2), "big")
