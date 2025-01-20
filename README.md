@@ -14,35 +14,35 @@ I tried to train text to video and image to video models to generate 2D game ani
 ## text to animation, image to animation
 
 <p align="middle">
-  <img src="https://play.gptdash.xyz/demo_samples/050824/merged_spinkick_8.gif" width="200" />
+  <img src="https://godmodeai.cloud/merged_spinkick_8.gif" width="200" />
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0009_0.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_0.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_7.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_0.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_7.gif" width="200" /> 
 </p>
 
 <p align="middle">
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0048_0.gif" width="200" />
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_2.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/merged_spinkick_0.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_2.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/merged_spinkick_0.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0052_2.gif" width="200" /> 
 </p>
 
 <p align="middle">
-  <img src="https://play.gptdash.xyz/demo_samples/050824/merged_spinkick_6.gif" width="200" />
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_1.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/merged_spinkick_6.gif" width="200" />
+  <img src="https://godmodeai.cloud/sword_1.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0012_1.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/merged_spinkick_3.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/merged_spinkick_3.gif" width="200" /> 
 </p>
 <p align="middle">
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0058_2.gif" width="200" />
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0054_0.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0010_1.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_3.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_3.gif" width="200" /> 
 </p>
 <p align="middle">
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_4.gif" width="200" />
-  <img src="https://play.gptdash.xyz/demo_samples/050824/merged_spinkick_7.gif" width="200" /> 
-  <img src="https://play.gptdash.xyz/demo_samples/050824/sword_6.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_4.gif" width="200" />
+  <img src="https://godmodeai.cloud/merged_spinkick_7.gif" width="200" /> 
+  <img src="https://godmodeai.cloud/sword_6.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0014_2.gif" width="200" /> 
 </p>
 
