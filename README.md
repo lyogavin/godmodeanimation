@@ -1,6 +1,6 @@
 # God Mode Animation: 2D Game Animation Generation Model
 
-## 🎉 Updates May 2025
+## 🎉 Updates @May 2025:
 
 **We've launched [God Mode AI 2.0](https://www.godmodeai.cloud/ai-sprite-generator)** - AI sprite generator that can generate professional game animation sprites from your image, and much more!
 
