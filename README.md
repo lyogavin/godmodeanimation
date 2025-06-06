@@ -1,48 +1,54 @@
 # God Mode Animation: 2D Game Animation Generation Model
 
+## 🎉 Updates May 2025
+
+**We've launched [God Mode AI 2.0](https://www.godmodeai.cloud/ai-sprite-generator)** - AI sprite generator that can generate professional game animation sprites from your image, and much more!
+
+<img src="/assets/godmodeai-hero-anim.webp" width="300" />
+
 <p align="middle">
   <img src="/assets/godmodeanimation_logo.png?raw=true" width="300" />
   <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
 </p>
 
-I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://www.gavinliblog.com/posts/godmodeanimation).
+I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://medium.com/ai-advances/i-trained-a-2d-game-animation-generation-model-to-create-complex-cool-game-actions-fully-cf749a72c473).
 
 
 [![Website](https://img.shields.io/website?up_message=blog&url=https%3A%2F%2Fmedium.com%2F%40lyo.gavin&logo=medium&color=black)](https://medium.com/@lyo.gavin)
-[![Website](https://img.shields.io/badge/Gavin_Li-Blog-blue)](https://gavinliblog.com)
+[![Website](https://medium.com/ai-advances/i-trained-a-2d-game-animation-generation-model-to-create-complex-cool-game-actions-fully-cf749a72c473)](https://gavinliblog.com)
 
 ## text to animation, image to animation
 
 <p align="middle">
-  <img src="https://godmodeai.cloud/merged_spinkick_8.gif" width="200" />
+  <img src="https://god-mode-ai.vercel.app/merged_spinkick_8.gif" width="200" />
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0009_0.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/sword_0.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/sword_7.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_0.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_7.gif" width="200" /> 
 </p>
 
 <p align="middle">
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0048_0.gif" width="200" />
-  <img src="https://godmodeai.cloud/sword_2.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/merged_spinkick_0.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_2.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/merged_spinkick_0.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0052_2.gif" width="200" /> 
 </p>
 
 <p align="middle">
-  <img src="https://godmodeai.cloud/merged_spinkick_6.gif" width="200" />
-  <img src="https://godmodeai.cloud/sword_1.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/merged_spinkick_6.gif" width="200" />
+  <img src="https://god-mode-ai.vercel.app/sword_1.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0012_1.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/merged_spinkick_3.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/merged_spinkick_3.gif" width="200" /> 
 </p>
 <p align="middle">
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0058_2.gif" width="200" />
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0054_0.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0010_1.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/sword_3.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_3.gif" width="200" /> 
 </p>
 <p align="middle">
-  <img src="https://godmodeai.cloud/sword_4.gif" width="200" />
-  <img src="https://godmodeai.cloud/merged_spinkick_7.gif" width="200" /> 
-  <img src="https://godmodeai.cloud/sword_6.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_4.gif" width="200" />
+  <img src="https://god-mode-ai.vercel.app/merged_spinkick_7.gif" width="200" /> 
+  <img src="https://god-mode-ai.vercel.app/sword_6.gif" width="200" /> 
   <img src="https://f005.backblazeb2.com/file/godmodeaigendanims/samples/0014_2.gif" width="200" /> 
 </p>
 
