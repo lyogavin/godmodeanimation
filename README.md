@@ -6,6 +6,8 @@
 
 <img src="/assets/godmodeai-hero-anim.webp" width="300" />
 
+## Below is our last generation of model, for the latest work see above:
+
 <p align="middle">
   <img src="/assets/godmodeanimation_logo.png?raw=true" width="300" />
   <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
@@ -15,7 +17,6 @@ I tried to train text to video and image to video models to generate 2D game ani
 
 
 [![Website](https://img.shields.io/website?up_message=blog&url=https%3A%2F%2Fmedium.com%2F%40lyo.gavin&logo=medium&color=black)](https://medium.com/@lyo.gavin)
-[![Website](https://medium.com/ai-advances/i-trained-a-2d-game-animation-generation-model-to-create-complex-cool-game-actions-fully-cf749a72c473)](https://gavinliblog.com)
 
 ## text to animation, image to animation
 
