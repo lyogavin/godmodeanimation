@@ -13,10 +13,10 @@
   <img src="/assets/godmodeanimation_logo1.png?raw=true" width="300" /> 
 </p>
 
-I tried to train text to video and image to video models to generate 2D game animations. I used public game animation data and 3D mixamo model rendered animations to train the animation generation models. I'm open sourcing the model, training data, training code and data generation code. More details can be found in my blog [here](https://medium.com/ai-advances/i-trained-a-2d-game-animation-generation-model-to-create-complex-cool-game-actions-fully-cf749a72c473).
+I tried to train text to video and image to video models to generate 2D game animations. I'm open sourcing the model and training code.
 
 
-[![Website](https://img.shields.io/website?up_message=blog&url=https%3A%2F%2Fmedium.com%2F%40lyo.gavin&logo=medium&color=black)](https://medium.com/@lyo.gavin)
+[Website](https://godmodeai.co)
 
 ## text to animation, image to animation
 
@@ -87,15 +87,6 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 | Run | 19    |1080    | DC I2V | [model](https://huggingface.co/lyogavin/godmodeanimation_dc_run_ep19)    |
 
 
-## Training DataSet
-
-
-| Motion         | Model Type              | Data         |
-| ------------ | ------------- | ------------ |
-| Sword Wield | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_sword_wield)    |
-| Spin Kick | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_spinkick)    |
-| Run Jump | VC2 T2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_runjump)    |
-| Run | DC I2V | [link](https://huggingface.co/datasets/lyogavin/godmodeanimation_i2v_run)    |
 
 
 ##  How to Train I2V Model
@@ -120,18 +111,6 @@ You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
 ## How to Train DC I2V Model
 
 DC I2V model is based on [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter). Please follow the instructions in the [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter) repository to train the DC I2V model.
-
-## Render Mixamo Animation as 2D Game Animation Videos
-
-1. Install Python blender:
-    See [here](https://developer.blender.org/docs/handbook/building_blender/linux/) for details.
-2. Render the animation:
-
-   ```bash
-   cd godmodeanimation/data_generation
-   python render_mixamo_videos.py # --help to see more options
-   
-   ```
 
 
 ## Replicate Public Model
