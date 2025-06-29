@@ -2,7 +2,7 @@
 
 ## 🎉 Updates @May 2025:
 
-**We've launched [God Mode AI 2.0](https://www.godmodeai.cloud/ai-sprite-generator)** - AI sprite generator that can generate professional game animation sprites from your image, and much more!
+**We've launched [God Mode AI 2.0](https://www.godmodeai.co/ai-sprite-generator)** - AI sprite generator that can generate professional game animation sprites from your image, and much more!
 
 <img src="/assets/godmodeai-hero-anim.webp" width="300" />
 
@@ -55,7 +55,7 @@ I tried to train text to video and image to video models to generate 2D game ani
 
 ## text to game based on animation model
 
-You can try the games [here](https://www.godmodeai.cloud/godmodedino/)
+You can try the games [here](https://www.godmodeai.co/godmodedino/)
 <p align="middle">
     <p align="middle">a dino jumping cacti in the desert</p>
     <p align="middle"><img src="/assets/dino_game.gif" width="300" /></p>
